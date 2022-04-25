@@ -1,0 +1,366 @@
+/*
+ * General/Utility Styles
+*/
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+body {
+  margin: 0;
+  background: rgb(245, 245, 245);
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 0.875rem;
+  color: rgb(86, 90, 92);
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  font-weight: bold;
+  color: rgb(255, 89, 95);
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+
+
+/*
+ * Button styles
+*/
+
+.button {
+  background: rgb(255, 89, 95);
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 5rem;
+  border-bottom: 1px solid rgb(227, 25, 29);
+  border-radius: 2px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*
+ * Heading
+*/
+
+h1 {
+  font-size: 1.375rem;
+  color: #666A6C;
+}
+
+/*
+ * Header and .hero Styles
+*/
+
+
+
+header {
+  background: #FFF;
+  height: 3.75rem;
+}
+
+header .logo {
+
+  border-right: 1px solid #DCE0E0;
+}
+
+.hero img {
+  width: 100%;
+}
+
+
+/*
+* Info
+*/
+
+.info {
+  background: #FFF;
+  text-align: center;
+  padding: 1.5625rem;
+}
+
+.info h1 {
+  margin-bottom: 0.3125rem;
+}
+
+.info .owner-details img {
+  border-radius: 50%;
+  
+}
+
+.info h2.relationship, .info h2.name {
+ color: #909597;
+ margin-bottom: 0.1875rem;
+}
+
+.info h2.name {
+ font-weight: bold;
+}
+
+.info .icon {
+  float: left;
+  width: 33.3%;
+}
+
+.info .booking h2 {
+ font-weight: 600;
+ font-size: 1.375rem;
+ margin-bottom: 0.8125rem;
+ padding-top: 1.5625rem;
+}
+
+.location {
+  padding-bottom: 1.25rem;
+}
+
+.info h2.price time {
+ font-size: 1rem;
+}
+
+.info .icon img {
+ height: 1.875rem;
+ margin-bottom: 0.1875rem;
+}
+
+/*
+* About the dog
+*/
+
+
+.about h3 {
+
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #565A5C;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  border-top: 1px solid #DCE0E0;
+}
+
+.the-dog p {
+
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  color: #565A5C;
+  margin: auto 16px 16px 16px;
+
+}
+
+.the-dog h4 {
+
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 13px;
+  color: #FF595F;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #DCE0E0;
+  padding-bottom: 36px;
+}
+
+
+.about {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  /*border-bottom: 1px solid #DCE0E0;*/
+  /*margin-left: 16px;*/
+}
+
+.service {
+  border-bottom: 1px solid #DCE0E0;
+  padding-bottom: 28px;
+}
+
+.care {
+  width: 170px;
+  margin-bottom: 10px;
+  margin-left: 16px;
+}
+
+.service .diet {
+
+  line-height: 1.2;
+  margin-left: 16px;
+
+}
+
+.service .check-in {
+
+  line-height: 1.2;
+  margin-left: 16px;
+}
+
+
+span {
+  font-weight: bold;
+}
+
+/*
+*Games
+*/
+
+.games {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  margin-left: 16px;
+  border-bottom: 1px solid #DCE0E0;
+
+
+}
+
+.games h5 {
+
+  padding-bottom: 20px;
+
+}
+
+
+.icon h3 {
+  padding: 16px;
+  display: inline;
+  line-height: 2;
+}
+
+
+
+
+
+/*
+* Photos of the dogs
+*/
+
+.photos {
+  margin-top: 16px;
+}
+
+.photos .dog1 img {
+  width: 100%;
+  padding: 1rem;
+}
+
+.photos .dog2 img {
+  width: 100%;
+  padding: 1rem;
+}
+
+.photos .dog3 img {
+  width: 100%;
+  padding: 1rem;
+}
+
+
+
+/*
+*  Full screen version/desktop version
+*/
+
+
+
+@media only screen and (min-width: 1060px) {
+
+  
+  .container {
+     width: 1040px;
+     margin: 0 auto;
+ }
+
+
+  .column {
+    float: left;
+  }
+
+  .info .profile {
+    width: 660px;
+  }
+
+  .info .booking {
+    width: 380px;
+  }
+
+  .info .owner-details {
+    width: 20%;
+  }
+
+  .info .pet-details {
+    width: 80%;
+    text-align: left;
+  }
+
+  .info .pet-details .icon {
+     width: inherit;
+     margin-right: 50px;
+ }
+
+ .info .pet-details .icon img {
+     display: block;
+     margin: 3px auto 3px;
+ }
+
+
+/*
+* About the dog
+*/
+
+ .the-dog p {
+
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  color: #565A5C;
+  margin: 0 310px 36px 310px;
+
+}
+
+.the-dog h4 {
+  padding-left: 310px;
+  text-align: left;
+}
+
+.service {
+  padding-top: 28px;
+  padding-left: 310px;
+  margin-left: 0;
+  height: 130px;
+  clear: left;
+
+}
+
+.care {
+  line-height: 1.5;
+  width: 170px;
+}
+
+.service .diet {
+  float: left;
+  margin-left: 170px;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+
+.service .check-in {
+  padding-left: 430px;
+  line-height: 1.5;
+}
+
+
+/*
+Games
+*/
+
+ 
+
+
+
